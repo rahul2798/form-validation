@@ -1,0 +1,44 @@
+<!-- <p>rahul</p> -->
+
+<!-- ngOnchanges vs ngDoCheck -->
+<!-- 
+<input type="text" (input)="seeChanges($event)">
+
+<app-home (newDataToParent)="addBook($event)" [dataTochild]=[data]></app-home>
+
+<p>{{childData}}</p>
+
+
+
+<p class="rahul">hi I am Rahul</p>
+
+<p class="gunu">hi I am Gunu</p>
+
+<p class="raja" *ngIf="isVisible">hi I am raja</p>
+
+<p class="rishu" [hidden]="!isVisible">hi I am rishu</p>
+
+<hr> -->
+<b>Data communication between components</b>
+
+<h1>input/output</h1>
+<p>parent to child</p>
+
+
+<app-child1 [dataToChild]="dataToChildData" (dataToParent)="dataToParentContent($event)"></app-child1>
+
+<p> child to parent data</p>
+<h1>{{dataToParent}}</h1>
+<hr>
+<b>Using Service</b>
+
+<button (click)="send()">Using Service</button>
+
+<div style="width: 100%;">
+    <div style="width: 50%;background-color: cadetblue;">
+        <app-sender-comp></app-sender-comp>
+    </div>
+    <div style="width: 50%;background-color: rgb(83, 33, 182);">
+        <app-receiver-comp></app-receiver-comp>
+    </div>
+</div>

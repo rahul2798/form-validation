@@ -1,0 +1,7 @@
+{
+  "name": "form validation",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
